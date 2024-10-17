@@ -1,0 +1,99 @@
+:root {
+  --main-font: "SpoqaHanSans";
+  --bold-font: "SpoqaHanSansBold";
+  --main-font-size: 18px;
+  --sub-font-size: 16px;
+}
+
+body {
+  width: 550px;
+  height: 584.69px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header a img {
+  width: 238px;
+  height: 74px;
+  display: block;
+}
+
+.login {
+  width: 550px;
+  height: 388px;
+  padding: 20px;
+}
+
+.userType {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.userType button {
+  width: 50%;
+  padding: 10px 0;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px 8px 0 0;
+  background-color: #f2f2f2;
+  font-family: var(--bold-font);
+  font-size: var(--main-font-size);
+  cursor: pointer;
+}
+
+.userType button.active {
+  background-color: white;
+  border-bottom: none;
+  border-top: 1px solid #c4c4c4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+.loginFm input {
+  width: 480px;
+  padding: 15px;
+  font-family: var(--main-font);
+  font-size: var(--sub-font-size);
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.submitBtn {
+  width: 480px;
+  height: 60px;
+  color: #fff;
+  background-color: #21bf48;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-family: var(--bold-font);
+  font-size: var(--main-font);
+}
+
+.menu-options {
+  width: 184px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.menu-options li {
+  list-style: none;
+}
+
+.menu-optiopns li a {
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-size: var(--sub-font-size);
+  color: #333333;
+
+  font-size: var(--sub-font-size);
+}
