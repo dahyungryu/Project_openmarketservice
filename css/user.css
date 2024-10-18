@@ -20,41 +20,51 @@ header a img {
   display: block;
 }
 
-.login {
-  width: 550px;
-  height: 388px;
-  padding: 20px;
-}
-
 .userType {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 0;
 }
 
 .userType button {
   width: 50%;
   padding: 10px 0;
   border: 1px solid #c4c4c4;
-  border-radius: 8px 8px 0 0;
+  border-radius: 5px 5px 0 0;
   background-color: #f2f2f2;
   font-family: var(--bold-font);
   font-size: var(--main-font-size);
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .userType button.active {
   background-color: white;
   border-bottom: none;
   border-top: 1px solid #c4c4c4;
+  z-index: 3;
 }
 
-form {
+.login {
+  width: 550px;
+  height: 388px;
+  padding: 20px;
+}
+
+.loginFm {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   border: 1px solid #c4c4c4;
   border-radius: 8px;
+  margin-top: -1px;
+  position: relative;
+  z-index: 2;
 }
 
 .loginFm input {
@@ -62,8 +72,12 @@ form {
   padding: 15px;
   font-family: var(--main-font);
   font-size: var(--sub-font-size);
-  border-top: none;
-  border-bottom: 1px solid #ddd;
+  
+  border: none;
+  border-bottom: 2px solid #ddd;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s;
 }
 
 .submitBtn {
@@ -85,11 +99,7 @@ form {
   margin-top: 20px;
 }
 
-.menu-options li {
-  list-style: none;
-}
-
-.menu-optiopns li a {
+.menu-options a {
   text-decoration: none;
   font-family: var(--main-font);
   font-size: var(--sub-font-size);
@@ -97,3 +107,4 @@ form {
 
   font-size: var(--sub-font-size);
 }
+
