@@ -21,14 +21,16 @@
         ><img src="./src/Logo-hodu.png" alt="호두 홈페이지로 이동"
       /></a>
     </header>
-    <div class="login">
+
+
+    <section class="login">
       <div class="userType">
         <button class="login-buyer active">구매회원 로그인</button>
         <button class="login-seller">판매회원 로그인</button>
       </div>
-      <div></div>
-      <form action="" class="loginFm">
-        <div class="inputs">
+
+      <form class="loginFm" action="" >
+        <div class="inputs-login">
           <label for="id" class="sr-only">아이디</label>
           <input
           type="text"
@@ -40,20 +42,21 @@
           <label for="pw" class="sr-only"></label>
           <input type="text" placeholder="비밀번호" required />
         </div>
+        <div class="result"></div>
         <button type="submit" class="submitBtn">로그인</button>
       </form>
-    </div>
+    </section>
     <ul class="menu-options">
       <li class="join-link">
-        <a href="">회원가입</a>
+        <a href="join.html">회원가입</a>
       </li>
       <span>|</span>
       <li class="findPassword-link">
-        <a href="">비밀번호찾기</a>
+        <a href="page404.html">비밀번호찾기</a>
       </li>
     </ul>
 
-    <script src="./login.js"></script>
+    <script src="./js/login.js"></script>
     <script>
       const buyerBtn = document.querySelector(".login-buyer");
       const sellerBtn = document.querySelector(".login-seller");

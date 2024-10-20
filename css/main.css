@@ -1,17 +1,12 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-
 /* 400 */
 @font-face {
-  font-family: "SpoqaHanSans";
-  font-weight: 400;
-  src: url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-/* 500 */
-@font-face {
-  font-family: "SpoqaHanSansBold";
-  font-weight: 500;
-  src: url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -22,4 +17,8 @@
   clip-path: inset(50%);
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+a {
+  text-decoration: none;
 }

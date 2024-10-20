@@ -6,16 +6,95 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>404PAGENOTFOUND</title>
+    <style>
+      :root {
+        --main-font: "SpoqaHanSansNeo-Regular";
+        --bold-font-weight: 500;
+        --header-font-weight: 700;
+        --main-font-size: 18px;
+        --sub-font-size: 16px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: var(--main-font);
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+      section1 img {
+        width: 276px;
+        height: 236px;
+      }
+      section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+      }
+      section2 h1 {
+        font-weight: var(--header-font-weight);
+        font-size: 36px;
+      }
+      section2 p {
+        font-size: var(--sub-font-size);
+        color: #767676;
+      }
+      .btn-group {
+        width: 414px;
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        font-weight: 700;
+        font-size: var(--main-font-size);
+        margin-top: 10px;
+      }
+      button {
+        width: 200px;
+        height: 60px;
+        border: 1px solid #C4C4C4;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: var(--main-font-size);
+      }
+
+      .btn-group button a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .btn-group button a:visited {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .btn-main {
+        background-color: #21BF48;
+    }
+
+      .btn-prev {
+        color: #767676;
+      }
+    </style>
   </head>
   <body>
-    <section1><img src="./src/icon-404.svg" alt="" /></section1>
-    <section2
-      ><h1 class="pageNotFound">페이지를 찾을 수 없습니다.</h1>
-      <p>페이지가 존재하지 않거나 사용할 수 없는 페이지입니다. <br>
-        웹 주소가 올바른지 확인해 주세요.</p>
-        <a href="index.html">메인으로</a>
-        <button>이전 페이지</button>
-      </section2
-    >
+    <div class="container">
+      <section1><img src="./src/icon-404.svg" alt="" /></section1>
+      <section2
+        ><h1 class="pageNotFound">페이지를 찾을 수 없습니다.</h1>
+        <p>
+          페이지가 존재하지 않거나 사용할 수 없는 페이지입니다. <br />
+          웹 주소가 올바른지 확인해 주세요.
+        </p>
+        <div class="btn-group">
+          <button class="btn-main"><a href="index.html">메인으로</a></button>
+          <button class="btn-prev">이전 페이지</button>
+        </div>
+      </section2>
+    </div>
   </body>
 </html>
