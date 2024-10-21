@@ -109,17 +109,29 @@ main {
     height: 600px;
 
 }
-.productInfo .sellerName {
+
+.purchase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.purchase .sellerName {
     font-size: var(--sub-color);
     color: var(--sub-color);
 } 
-.productInfo h2 {
+.purchase h2 {
     font-size: 36px;
     margin-top: 20px;
 }
-.productInfo .price {
+.purchase .price {
     font-size: 36px;
     font-weight: var(--bold-font-weight2);
+}
+.purchase .price span {
+    font-size: 18px;
+}
+.purchase .shipping {
+    font-size: 16px;
 }
 .count button {
     width: 50px;
@@ -155,10 +167,7 @@ main {
   z-index: 1000;
 }
 
-.productInfo {
-  display: flex;
-  flex-direction: row;
-}
+
 .loginModal .active .btn-group {
   display: flex;
   flex-direction: row;
