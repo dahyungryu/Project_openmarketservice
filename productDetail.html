@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/productDetail.css" />
+    <title>상품페이지</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="sr-only">싱품 상세페이지</h1>
+      <div class="hodu-header">
+        <a href="index.html"
+          ><img src="./src/Logo-hodu.png" alt="호두마켓 바로가기"
+        /></a>
+
+        <form action="" class="search">
+          <input type="text" placeholder="상품을 검색해보세요!" />
+          <button>
+            <img src="./src/search.svg" alt="상품 검색하기" />
+          </button>
+        </form>
+      </div>
+
+      <ul class="header-menu">
+        <li>
+          <a href=""
+            ><img src="./src/icon-shopping-cart.svg" alt="장바구니" />장바구니
+          </a>
+        </li>
+        <li>
+          <a href="login.html"
+            ><img src="./src/icon-user.svg" alt="로그인" />로그인
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="productInfo">
+        <img src="https://placeholder.com/600x600" alt="상품 이미지" />
+        <div class="buy">
+          <p class="sellerName">백엔드글로벌</p>
+          <h2>딥러닝 개발자 무릎 담요</h2>
+          <p class="price">17,500원</p>
+          <p>택배배송 / 무료배송</p>
+          <div class="division"></div>
+          <div class="count">
+            <button class="minus">
+              <img src="./src/icon-minus-line.svg" alt="수량 빼기" />
+            </button>
+            <input class="countInput" type="number" value="1" />
+            <button class="plus">
+              <img src="./src/icon-plus-line.svg" alt="수량 더하기" />
+            </button>
+          </div>
+          <div class="division"></div>
+
+          <div class="result">
+            <p class="totalAmount">
+              총 수량<span class="totalAmountNum">1</span>개
+            </p>
+            <p class="totalPrice">총 상품 금액</p>
+            <p class="totalPriceNum">17,500 <span>원</span></p>
+          </div>
+          <div class="btn-group">
+            <button class="buyNowBtn">
+              <a href="index.html">바로 구매</a>
+            </button>
+            <button class="putInCart"><a href="cart.html">장바구니</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="moreInfo">
+        <button class="detail active">버튼</button>
+        <button class="review disabled">리뷰</button>
+        <button class="qNa disabled">Q&A</button>
+        <button class="refundInfo disabled">반품/교환정보</button>
+      </div>
+      <!-- 로그인 모달창 -->
+      <div class="loginModal">
+        <button class="closeModalBtn"><img src="./src/icon-delete.svg" alt=""></button>
+        <p>
+          로그인이 필요한 서비스입니다. <br />
+          로그인 하시겠습니까?
+        </p>
+        <div class="btn-group">
+          <button class="cancelLoginBtn">아니오</button>
+          <button class="userLoginBtn"><a href="./login.html"></a>예</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerLinks">
+        <ul class="terms-link">
+          <li><a href="./page404.html">호두샵 소개</a></li>
+          <span>|</span>
+          <li><a href="./page404.html">이용약관</a></li>
+          <span>|</span>
+          <li>
+            <a href="./page404.html"><strong>개인정보처리방침</strong></a>
+          </li>
+          <span>|</span>
+          <li><a href="./page404.html">전자금융거래약관</a></li>
+          <span>|</span>
+          <li><a href="./page404.html">청소년보호정책</a></li>
+          <span>|</span>
+          <li><a href="./page404.html">제휴문의</a></li>
+        </ul>
+        <div class="sns-link">
+          <a href="./page404.html"
+            ><img src="./src/icon-insta.svg" alt="인스타그램 바로가기"
+          /></a>
+
+          <a href="./page404.html"
+            ><img src="./src/icon-fb.svg" alt="페아스북 바로가기"
+          /></a>
+
+          <a href="./page404.html"
+            ><img src="./src/icon-yt.svg" alt="인스타그램 바로가기"
+          /></a>
+        </div>
+      </div>
+      <div class="division"></div>
+
+      <div class="companyInfo">
+        <p>
+          <strong>(주)HODU SHOP</strong> <br />
+          제주특별자치도 제주시 동광고 137 제주코딩베이스캠프 <br />
+          사업자 번호 : 000-0000-0000 | 통신판매업
+          <br />
+          대표 : 김호두
+        </p>
+      </div>
+    </footer>
+    <script src="./js/productDetail.js"></script>
+  </body>
+</html>
